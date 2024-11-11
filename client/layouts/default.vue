@@ -19,7 +19,7 @@
   
 	  <!-- Global footer that appears on all pages -->
 	  <v-footer class="d-flex flex-column flex-0-0 pa-0 mt-auto">
-		<div class="bg-teal d-flex w-100 align-center px-3">
+		<div class="bg-gray d-flex w-100 align-center px-3">
 		  <strong>Get connected with us on social networks!</strong>
 		  <v-spacer></v-spacer>
 		  <div class="d-flex">
@@ -30,8 +30,8 @@
 			  class="mx-4"
 			  size="small"
 			  variant="plain"
-			>
-			  <v-icon>{{ icon }}</v-icon> 
+				>
+			  <v-icon>{{ icon }}</v-icon> <!-- Added v-icon component to render the icons -->
 			</v-btn>
 		  </div>
 		</div>
@@ -56,5 +56,6 @@
   </script>
   
   <style scoped>
+  /* Add custom styles if necessary */
   </style>
   

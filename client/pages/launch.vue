@@ -112,7 +112,7 @@ export default {
 
     <!-- Content shown when data is available -->
     <v-select v-if="!loading" v-model="selectedYear" :items="availableYears" clearable label="Filter by Year" />
-    <v-btn class="mb-3" color="primary" @click="toggleSortDirection" v-if="!loading">
+    <v-btn class="mb-3" color="black" @click="toggleSortDirection" v-if="!loading">
       {{ sortDirection === 'asc' ? 'Ascending' : 'Descending' }}
     </v-btn>
     <v-btn class="mb-3 ml-2" to="/favorites" v-if="!loading">View Favorites</v-btn>
@@ -139,7 +139,7 @@ export default {
           <td class="text-center">
             {{ launch.rocket ? launch.rocket.rocket_name : 'N/A' }}
             <v-icon
-              :color="isFavorite(launch.rocket?.rocket_name) ? 'yellow' : ''"
+              :color="isFavorite(launch.rocket?.rocket_name) ? 'black' : ''"
               @click="toggleFavorite(launch.rocket?.rocket_name)"
             >
               {{ isFavorite(launch.rocket?.rocket_name) ? 'mdi-star' : 'mdi-star-outline' }}
