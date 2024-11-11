@@ -31,7 +31,7 @@
 			  size="small"
 			  variant="plain"
 			>
-			  <v-icon>{{ icon }}</v-icon> <!-- Added v-icon component to render the icons -->
+			  <v-icon>{{ icon }}</v-icon> 
 			</v-btn>
 		  </div>
 		</div>
@@ -56,6 +56,5 @@
   </script>
   
   <style scoped>
-  /* Add custom styles if necessary */
   </style>
   

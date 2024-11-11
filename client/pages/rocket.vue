@@ -88,10 +88,10 @@
   const rockets = ref<Rocket[]>([])
   const selectedRocket = ref<string | null>(null)
   
-  // Loading state to ensure data is loaded only once
+ 
   const loading = ref(true)
   
-  // Fetch the rocket data once, or if not already loaded
+  
   onMounted(async () => {
 	if (!rockets.value.length) {
 	  const { data } = await useAsyncQuery<{ rockets: Rocket[] }>(gql`
@@ -117,7 +117,7 @@
 		}
 	  `)
   
-	  // Set data and turn off loading once fetched
+
 	  rockets.value = data.value?.rockets ?? []
 	  loading.value = false
 	}
